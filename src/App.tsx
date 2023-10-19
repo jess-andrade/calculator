@@ -11,6 +11,7 @@ import {
 
 // -- My imports 
 import Button from './components/Button';
+import Display from './components/Display';
 
 
 function App(): JSX.Element {
@@ -19,6 +20,7 @@ function App(): JSX.Element {
     <SafeAreaView>
       <StatusBar barStyle={'light-content'} />
       <View style={styles.container}>
+        <Display value={'56'} />
         <View style={styles.buttons}>
           <Button label='AC' onClick={0} />
           <Button label='/' onClick={0} />
